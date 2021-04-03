@@ -10,4 +10,4 @@ SysInfo is a PWA which uses [sysInfo chrome Extension](https://pip.pypa.io/en/st
 ![standalone PWA](https://github.com/iamanishroy/sysInfo/blob/main/screenshots/pwa-st.png)
 ### 📱 Mobile
 ![mobile CPU](https://github.com/iamanishroy/sysInfo/blob/main/screenshots/pwa-m-cpu.JPG =250x)
-![mobile memory&storage](https://github.com/iamanishroy/sysInfo/blob/main/screenshots/pwa-m-mem-stor.JPG=250x)
+<img alt="mobile memory&storage" src="https://github.com/iamanishroy/sysInfo/blob/main/screenshots/pwa-m-mem-stor.JPG" style="width=50%" />
