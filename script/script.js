@@ -19,7 +19,9 @@ var data = {
 const config = {
   type: "line",
   data,
-  options: {},
+  options: {
+    // animation: false,
+  },
 };
 
 var myChart = new Chart(ctx, config);
@@ -39,6 +41,7 @@ function updateChartData(cpuData) {
         backgroundColor: col,
         borderColor: col,
         data: [cpuUsage(cpuData[i].usage, i)],
+        borderWidth: 1
       });
     }
     data.datasets = ds;

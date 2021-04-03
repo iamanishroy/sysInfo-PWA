@@ -20,5 +20,18 @@
   width: 180px;
   background-color: aquamarine;
   border-radius: 50%;
-  
+}
+
+@media only screen and (max-width: 600px) {
+  .memory {
+    padding: 30px 0;
+    border-bottom: 1px solid;
+  }
+  .memory .container {
+    width: 85%;
+  }
+  .memory .container .chart {
+    height: 150px;
+    width: 150px;
+  }
 }

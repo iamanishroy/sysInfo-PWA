@@ -110,4 +110,3 @@ define("./serviceWorker.js", ["./workbox-f8171896"], function (e) {
 });
 //# sourceMappingURL=serviceWorker.js.map
 
-console.log("hai", chrome);

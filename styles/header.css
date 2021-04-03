@@ -16,7 +16,7 @@
   align-items: center;
 }
 
-.header .left img{
+.header .left img {
   height: 35px;
   margin-right: 20px;
 }
@@ -47,4 +47,24 @@
 .header .middle .active {
   background-color: var(--tertiary);
   box-shadow: 4px 4px 8px 4px #07808033;
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    justify-content: space-between;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+  .header .left span {
+    display: none;
+  }
+  .header .middle {
+    width: 80%;
+  }
+  .header .middle a {
+    width: auto;
+    padding: 0 20px;
+  }
+  .header .right {
+    display: none;
+  }
 }
