@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/systemInfo/systemInfo.css">
+    <link rel="stylesheet" href="./styles/systemInfo/cpu.css">
+    <link rel="stylesheet" href="./styles/systemInfo/memoryAndStorage.css">
+    <link rel="stylesheet" href="./styles/systemInfo/memory.css">
+    <link rel="stylesheet" href="./styles/systemInfo/storage.css">
+    <script src="./script/chart.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            SysInfo
+        </div>
+        <div class="middle">
+            <a class="active">Info</a>
+            <a href="diagnose.html">Diagnostics</a>
+            <a href="state.html">State</a>
+        </div>
+        <div class="right" id="clock">
+        </div>
+    </div>
+    <div class="systemInfo">
+        <div class="cpu">
+            <div class="componentName">CPU</div>
+            <div class="container">
+                <div class="info">
+                    <div class="row">
+                        <div class="param">
+                            <p>Architecture</p>
+                            <p id="cpu-arch">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="param">
+                            <p>Model Name</p>
+                            <p id="cpu-model">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="param">
+                            <p>no of Processors</p>
+                            <p id="cpu-proc">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                        <div class="param">
+                            <p>Features</p>
+                            <p id="cpu-feat">Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="cpu-proc-usage" style="display: none;" onclick="invkUpdChart()"></div>
+                <div class="charts">
+                    <canvas id="chart"></canvas>
+                    <!-- <div class="processorChart">
+                        <p>processor 1</p>
+                        <div class="chart chartt" style="background : #ffffff"></div>
+                    </div>
+                    <div class="processorChart">
+                        <p>processor 1</p>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="processorChart">
+                        <p>processor 1</p>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="processorChart">
+                        <p>processor 1</p>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="processorChart">
+                        <p>processor 1</p>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="processorChart">
+                        <p>processor 1</p>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="processorChart">
+                        <p>processor 1</p>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="processorChart">
+                        <p>processor 1</p>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="processorChart">
+                        <p>processor 1</p>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="processorChart">
+                        <p>processor 1</p>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="processorChart">
+                        <p>processor 1</p>
+                        <div class="chart"></div>
+                    </div>
+                    <div class="processorChart">
+                        <p>processor 1</p>
+                        <div class="chart"></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="memoryAndStorage">
+            <div class="memory">
+                <div class="componentName">Memory</div>
+                <div class="container">
+                    <div class="info">
+                        <div class="param">
+                            <p>Available</p>
+                            <p id="mem-available"></p>
+                        </div>
+                        <div class="param">
+                            <p>Used</p>
+                            <p id="mem-used"></p>
+                        </div>
+                        <div class="param">
+                            <p>Total Capacity</p>
+                            <p id="mem-total"></p>
+                        </div>
+                    </div>
+                    <div class="chart" id="mem-chart">
+                    </div>
+                </div>
+            </div>
+            <div class="storage">
+                <div class="componentName">Storage</div>
+                <div class="container" id="stor-disks">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script/script.js" defer></script>
+    <script src="./script/clock.js"></script>
+</body>
+
+</html>

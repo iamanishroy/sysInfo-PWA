@@ -1,0 +1,50 @@
+.cpu {
+  width: 48%;
+}
+.cpu .container {
+  display: flex;
+  flex-direction: column;
+}
+.cpu .container .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.cpu .container .info .row {
+  width: 50%;
+}
+.cpu .container .info .row .param {
+  margin-bottom: 10px;
+}
+.cpu .container .info .row .param p:nth-child(1) {
+  font-size: 0.8rem;
+}
+.cpu .container .info .row .param p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cpu .container .charts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#chart {
+  height: auto;
+  width: 100%;
+}
+.cpu .container .charts .processorChart {
+  width: 25%;
+  margin-bottom: 15px;
+}
+.cpu .container .charts .processorChart p {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.cpu .container .charts .processorChart .chart {
+  width: 98%;
+  height: 100px;
+  background-color: aqua;
+}

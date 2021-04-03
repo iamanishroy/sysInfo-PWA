@@ -1,0 +1,25 @@
+.storage .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-height: 70%;
+}
+.storage .disk {
+  border-bottom: 2px solid var(--highlight);
+  width: 45%;
+  margin-bottom: 30px;
+}
+.storage .disk p:nth-child(1) {
+  font-family: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.storage .disk p:nth-child(2) {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+.storage .disk p:nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: 700;
+}

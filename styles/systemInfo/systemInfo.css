@@ -1,0 +1,13 @@
+.systemInfo {
+  width: 85vw;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.systemInfo .componentName {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--headline);
+}

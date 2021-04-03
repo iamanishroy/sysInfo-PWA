@@ -1,0 +1,24 @@
+.memory .container {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.memory .container .info .param {
+  margin-bottom: 10px;
+}
+.memory .container .info .param p:nth-child(1) {
+  font-size: 0.8rem;
+}
+.memory .container .info .param p:nth-child(2) {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.memory .container .chart {
+  height: 180px;
+  width: 180px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  
+}
