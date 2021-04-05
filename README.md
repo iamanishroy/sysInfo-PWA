@@ -1,6 +1,6 @@
 # SysInfo - PWA
 
-SysInfo is a PWA which uses [sysInfo chrome Extension](https://pip.pypa.io/en/stable/) to fetch your system (CPU, memory and storage) information and displays it in the browser/ standalone.
+SysInfo is a PWA which uses [sysInfo chrome Extension](https://github.com/iamanishroy/sysInfo-chromeExtension) to fetch your system (CPU, memory and storage) information and displays it in the browser/ standalone.
 
 ## Important
 
