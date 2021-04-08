@@ -16,10 +16,9 @@
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-  color: var(--paragraph);
 }
 body {
-  background-color: #f8f5f2;
+  background-color: var(--background);
 }
 .main-svg {
   background: transparent !important;

@@ -78,7 +78,6 @@
                         </div>
                     </div>
                 </div>
-                <div id="cpu-proc-usage" style="display: none;" onclick="invkUpdChart()"></div>
                 <div class="charts">
                     <canvas id="chart"></canvas>
                     <!-- <div class="processorChart">
@@ -161,8 +160,10 @@
             </div>
         </div>
     </div>
-    <script src="./script/script.js"></script>
+    <script src="./script/cpuChart.js"></script>
     <script src="./script/clock.js"></script>
+    <script src="./script/updateDom.js"></script>
+    <script src="./script/refresh.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./serviceWorker.js')

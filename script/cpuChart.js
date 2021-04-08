@@ -1,17 +1,7 @@
 const ctx = document.getElementById("chart").getContext("2d");
 var strTime = new Date();
-var labels = [
-  `${strTime.getHours()}:${strTime.getMinutes()}:${strTime.getSeconds()}`,
-  "+30s",
-  "+30s",
-  "+30s",
-  "+30s",
-  "+30s",
-  "+30s",
-  "+30s",
-  "+30s",
-  "+30s",
-];
+// `${strTime.getHours()}:${strTime.getMinutes()}:${strTime.getSeconds()}`,
+var labels = ["10s", "", "", "", "", "", "", "", "", ""];
 var data = {
   labels: labels,
   datasets: [],
@@ -41,7 +31,7 @@ function updateChartData(cpuData) {
         backgroundColor: col,
         borderColor: col,
         data: [cpuUsage(cpuData[i].usage, i)],
-        borderWidth: 1
+        borderWidth: 1,
       });
     }
     data.datasets = ds;
@@ -56,14 +46,7 @@ function updateChartData(cpuData) {
   myChart.update();
 }
 
-function invkUpdChart() {
-  updateChartData(
-    JSON.parse(document.getElementById("cpu-proc-usage").innerText)
-  );
-}
-function calculateValue(usage) {
-  return Math.floor((usage.user / usage.total) * 10000);
-}
+
 var previousCpuInfo = [];
 function cpuUsage(usage, i) {
   if (previousCpuInfo[i]) {
@@ -81,22 +64,10 @@ function cpuUsage(usage, i) {
   previousCpuInfo[i] = usage;
   return usedSectionWidth;
 }
+
 // setInterval(function () {
 //   addData(Math.floor(Math.random() * 100) + 1);
 //   data.datasets[0].data.push(Math.floor(Math.random() * 100) + 1);
 //   data.labels.push("+30s");
 //   myChart.update();
 // }, 2000);
-
-/*
-    
-    {data}
-    upd
-    
-    
-    
-    */
-
-//  function getData() {
-//    return Math.random();
-//  }
