@@ -14,7 +14,7 @@ Currently, the ID of the [chrome extension](https://github.com/iamanishroy/sysIn
 
 ###
 
-![standalone PWA](https://github.com/iamanishroy/sysInfo/blob/main/screenshots/pwa-st.png)
+![standalone PWA](https://github.com/iamanishroy/sysInfo/blob/main/screenshots/pwa-cc.png)
 
 ### 📱 Mobile
 
